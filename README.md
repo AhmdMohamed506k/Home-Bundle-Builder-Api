@@ -38,7 +38,7 @@ git clone [https://github.com/AhmdMohamed506k/Frontend-Take-Home-Bundle-Builder.
 
 2 - Install dependencies:   
 
-npm install
+* npm install
 
 
 3 - Configure environment variables (Create a .env file in the root directory):
@@ -54,11 +54,11 @@ npm install
 
 4 - Run the project:
 
-npm start
+* npm start
 
 
 ## 🤝 Contribution:
 
-Developed by Ahmed Mohamed - Full-stack Web Developer.
+* Developed by Ahmed Mohamed - Full-stack Web Developer.
 
 ***
