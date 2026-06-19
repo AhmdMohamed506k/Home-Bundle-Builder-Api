@@ -43,13 +43,13 @@ npm install
 
 3 - Configure environment variables (Create a .env file in the root directory):
 
-Port = 3000,
-DataBaseURI = <your_mongodb_uri>,
-CloudinaryCloudName = <your_Cloudinary_Cloud_Name>,
-CloudinaryApiKey = <your_Cloudinary_Api_Key>,
-CloudinaryApiSecret = <your_Cloudinary_Api_Secret>,
-RedisURL= <your_redis_cloud_url>,
-StripeSecretKey = <your_stripe_secret_key>
+* Port = 3000
+* DataBaseURI = <your_mongodb_uri>
+* CloudinaryCloudName = <your_Cloudinary_Cloud_Name>
+* CloudinaryApiKey = <your_Cloudinary_Api_Key>
+* CloudinaryApiSecret = <your_Cloudinary_Api_Secret>
+* RedisURL= <your_redis_cloud_url>
+* StripeSecretKey = <your_stripe_secret_key>
 
 
 4 - Run the project:
