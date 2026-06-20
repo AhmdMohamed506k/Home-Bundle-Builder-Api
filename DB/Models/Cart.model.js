@@ -2,7 +2,7 @@
 import mongoose, { Schema, Types } from 'mongoose';
 
 const cartSchema = new Schema({
-    cartId: { type: String, required: true, unique: true },
+    cartId: { type: String, unique: true },
 
     Products: [{
         productId: { 
