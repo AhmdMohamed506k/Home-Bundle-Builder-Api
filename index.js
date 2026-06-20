@@ -5,12 +5,17 @@ import ConnectionDB from './DB/ConnectionDB.js';
 import CategoryRouter from './src/modules/Category/Category.routes.js';
 import ProductRouter from './src/modules/Product/Product.routes.js';
 import CartRouter from './src/modules/Cart/Cart.routes.js';
+import cors from "cors"
 
 const app = express();
 const port = process.env.Port || 3000;
 
 
 app.use(express.json())
+
+
+app.use(cors({origin : "*"}));
+
 
 // ======DBConnection========
 ConnectionDB()
