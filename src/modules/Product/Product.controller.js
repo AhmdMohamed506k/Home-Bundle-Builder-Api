@@ -10,7 +10,7 @@ import { nanoid } from "nanoid";
 // --> AddNewProduct
 export const AddNewProduct = asyncHandler(async (req, res, next) => {
 
-    const { CategoryId, ProductName, Description, Stock, Brand,ColorName,ColorHex, BasePrice, HasOffer, TotalOffer, PriceAfterOffer, HasVariants, Variants } = req.body;
+    const { CategoryId,CategoryName, ProductName, Description, Stock, Brand,ColorName,ColorHex, BasePrice, HasOffer, TotalOffer, PriceAfterOffer, HasVariants, Variants } = req.body;
 
     const CategoryExist = await CategoryModel.findById(CategoryId);
     if (!CategoryExist) return next(new Error("Category not found", { cause: 404 }));
@@ -53,7 +53,7 @@ export const AddNewProduct = asyncHandler(async (req, res, next) => {
 
   
     const productData = {
-        CategoryId, ProductName, Description, Stock, Brand,ColorName,ColorHex, BasePrice, HasOffer, TotalOffer, PriceAfterOffer, HasVariants,
+        CategoryId,CategoryName, ProductName, Description, Stock, Brand,ColorName,ColorHex, BasePrice, HasOffer, TotalOffer, PriceAfterOffer, HasVariants,
         Variants: processedVariants,
         ImageUrl: { secure_url: mainUrl, public_id: mainId }
     };
