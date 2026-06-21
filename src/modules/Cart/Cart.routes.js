@@ -14,7 +14,7 @@ const CartRouter = Router();
 CartRouter.post("/AddToCart",validate(CRV.addToCartSchema), CR.AddToCart);
 
 // --> Get-Cart-Routes
-CartRouter.get("/GetCart", CR.GetCart);
+CartRouter.get("/GetCart:CartId", CR.GetCart);
 
 // --> create-checkout-session-Routes
 CartRouter.post('/createCheckoutSession',validate(CRV.createCheckoutSchema), CR.CreateCheckoutSession);
