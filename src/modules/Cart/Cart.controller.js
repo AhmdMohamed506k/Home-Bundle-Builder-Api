@@ -75,15 +75,15 @@ export const GetCart = asyncHandler(async (req, res, next) => {
     }
 
     
-   const cart = await CartModel.findOne({ cartId: CartId }).populate({
-        path: 'Products.productId',
+const cart = await CartModel.findOne({ cartId: CartId }).populate({
+        path: 'Products.productId', 
         populate: {
-            path: 'CategoryId', 
+            path: 'CategoryId',     
             select: 'Name'      
         }
     });
     
-    
+    console.log(cart)
 
     
     if (cart) {
